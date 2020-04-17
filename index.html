@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Елементи комбінаторики.Онлайн калькулятор</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Онлайн калькулятор перестановок, розміщень, сполучень</h1>
+    </div>
+    
+    <div class="values" style="display: flex; flex-direction: row;">
+        <h3>Введіть a: </h3><input type="text" name="" id="entA" placeholder="a">
+        <h3>Введіть b: </h3><input type="text" name="" id="entB" placeholder="b">
+    </div>
+
+    <div class="buttons">
+        <button id="calcBtn">Обчислити!</button>
+        <button id="genPerm">Згенерувати перестановку</button>
+        <button id="genComb">Згенерувати сполучення</button>
+    </div>
+    
+    <h3 id="values"> </h3>
+    <button id="clearAll">Очистити поле</button>
+    <h3 id="generations"></h3>
+    <div class="results">
+        <ul>
+            <li>
+                <h3>Число перестановок з а: </h3>
+                <h3 class="answers" id="factAns"></h3>
+            </li>
+            <li>
+                <h3>Число розміщень з а по b (без повторень):</h3>
+                <h3 class="answers" id="permAns"></h3>
+            </li>
+            <li>
+                <h3>Число розміщень з а по b (з повтореннями):</h3>
+                <h3 class="answers" id="permWRepAns"></h3>
+            </li>
+            <li>
+                <h3>Число сполучень з а по b (без повторень):</h3>
+                <h3 class="answers" id="combAns"></h3>
+            </li>
+            <li>
+                <h3>Число сполучень з а по b (з повтореннями):</h3>
+                <h3 class="answers" id="combWRepAns"></h3>
+            </li>
+        </ul>
+    </div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

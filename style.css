@@ -1,0 +1,84 @@
+body {
+    background-color: rgb(238, 238, 238);
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.header {
+    margin: 0px 0px 20px 0px;
+    background-color: rgb(168, 168, 168);
+    font-weight: bold;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.header h1 {
+    margin: 10px;
+}
+input {
+    border: 1px solid rgb(0, 0, 0); 
+    border-radius: 10px;
+    outline: none;
+}
+.values {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.values h3 {
+    margin: 10px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0px;
+}
+
+button {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+   height: 30px;
+   width: 200px;
+   display:block;
+   position: relative;
+   border: 1px solid rgb(0, 0, 0);
+   border-radius: 10px;
+   outline: none;
+   margin: 50px auto; 
+   margin-bottom: 0px;
+}
+button:hover {
+    background-color: gray;
+    transition: 800ms;
+}
+button:active {
+    background-color: rgb(39, 39, 39);
+    color: #ffffff;
+}
+ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+.results {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.results h3 {
+    text-align: center;
+}
+.answers {
+    transition: 800ms;
+    background-color: rgb(168, 168, 168);
+    font-weight: bold;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+.empty {
+    background-color:rgba(143, 0, 0, 0.5);
+}
+#clearAll {
+    margin: 0px auto;
+    display: none;
+}
