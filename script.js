@@ -104,10 +104,26 @@ calcBtn.addEventListener("click", event => {
 })
 
 genPermF.addEventListener("click", event => {
-  clearBtn.style.display = "block";
-  document.getElementById("generations").innerHTML = " ";
-  document.getElementById("generations").innerHTML += "Згенеровані 720 перестановок: " + "<br/>";
-  document.getElementById("generations").innerHTML += "<br/>" + genPerm(array).join("\n");
+  if (document.getElementById("entA").value === ""){
+    document.getElementById("entA").classList += ("empty");
+    alert("Введіть кількість елементів масиву у поле 'Введіть a:'");
+  } 
+  else {
+    document.getElementById("entA").classList.remove("empty");
+    clearBtn.style.display = "block";
+    
+    let arrlen = parseInt(document.getElementById("entA").value, 10);
+    const newArray = [];
+    for (let i = 1; i <= arrlen; i++){
+      newArray.push(i);
+    }  
+    document.getElementById("values").innerHTML = "";
+    document.getElementById("values").innerHTML += "Вхідний масив: [ " + newArray + " ]";
+     
+    document.getElementById("generations").innerHTML = " ";
+    document.getElementById("generations").innerHTML += "Згенеровані " + factorial(arrlen) + " перестановок: " + "<br/>";
+    document.getElementById("generations").innerHTML += "<br/>" + genPerm(newArray).join("\n");
+  }
 })
 
 
